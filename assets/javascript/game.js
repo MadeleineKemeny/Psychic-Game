@@ -36,6 +36,7 @@ document.onkeydown = function (event) {
         restart()
     }
   }
+}
 
 // 1st IF (TRUE): compare "player letter" with the computerletter; if guess matches computerletter, update "wins++""; restart program.
 
