@@ -1,22 +1,29 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Guess A Letter</title>
+</head>
 <body>
+ 
 
 <h1>The Psychic Game!</h1>
 
 <p id="demo"><h3>To play:</h3></p> 
-<p>I'm thinking of a letter... try to guess it! To choose a letter, just type it on your keyboard You have 10 guesses per game.</p>
+<p>Your computer is thinking of a letter... try to guess it! To choose a letter, just type it on your keyboard You have 10 guesses per game.</p>
 <br>
 <p><h3>Score:</h3></p>
-<p>Correct guesses:</p>
-<p>Incorrect guesses:</p>
-<p>Remaining guesses:</p>
+<p>Wins:<span id="wins"></span></p>
+<p>Losses:<span id="losses"></span></p>
+<p>Remaining guesses:<span id="remainingGuesses"></span></p>
 <br>
-<p>So far, you've tried:</p>
+<p>So far, you've tried:<span id="lettersTried"></span></p>
 
 
 
-<script src="/HOMEWORK-week3/Psychic-Game/assets/javascript/game.js"></script>
 
+<script src="assets/javascript/game.js"></script>  
 </body>
 </html>
