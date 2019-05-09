@@ -5,21 +5,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Guess A Letter</title>
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 </head>
 <body>
- 
+    <div row="col-12-sm">
+        <header class="masthead" id= grad1>
+            <img src="assets/images/psychic3.gif">
+        </header>
+    </div>
 
-<h1>The Psychic Game!</h1>
-
-<p id="demo"><h3>To play:</h3></p> 
-<p>Your computer is thinking of a letter... try to guess it! To choose a letter, just type it on your keyboard You have 10 guesses per game.</p>
-<br>
-<p><h3>Score:</h3></p>
-<p>Wins:<span id="wins"></span></p>
-<p>Losses:<span id="losses"></span></p>
-<p>Remaining guesses:<span id="remainingGuesses"></span></p>
-<br>
-<p>So far, you've tried:<span id="lettersTried"></span></p>
+    <div class="gamecontainer">
+        <h1>The Psychic Game!</h1>
+        
+        <div class="gamecontainer">
+            <p id="demo">Your computer is thinking of a letter... try to guess it! To choose a letter, just type it on your keyboard You have 10 guesses per game.</p>
+            <br>
+            <div class="scorecard">
+                <p><h3>Score:</h3></p>
+                <ul>
+                    <li>Wins:<span id="wins"></span></li>
+                    <li>Losses:<span id="losses"></span></li>
+                    <li>Remaining guesses:<span id="remainingGuesses"></span></li>
+                    <br>
+                    <li>So far, you've tried:<span id="lettersTried"></span></li>
+                </ul>
+            </div>
+        </div>
+    </div>
 
 
 

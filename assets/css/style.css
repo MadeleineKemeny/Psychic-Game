@@ -1,0 +1,59 @@
+* {
+    box-sizing: border-box;
+  }
+
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}  
+
+.scorecard {
+    color: goldenrod;
+    background-color: black;
+    margin: 25px;
+    padding:25px;
+    text-align: left;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12);
+}
+
+h1 {
+    font-size: 50px;
+    text-align: center;
+  }
+
+.masthead {  
+    position: relative;
+    padding: 25px;
+    margin: 25px;
+    border: black;
+    border-width: 10px;
+}
+
+.gamecontainer {  
+    position: relative;
+    padding: 25px;
+    margin: 25px;
+    border-color: gold;
+    border-width: 5px;
+    border-style: dotted;
+}
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#grad1 {
+    height: 100%;
+    background-color: goldenrod;
+    background-image: linear-gradient(rgb(248, 200, 43),rgb(189, 125, 6));
+  }

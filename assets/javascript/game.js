@@ -5,9 +5,15 @@ var wins = 0
 var losses = 0
 var remainingGuesses = 10
 var lettersTried = ""
+var results = alphabet.join();
 
-// defining array from which computer and player can choose:
+// defining array from which computer can choose:
 var alphabet = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z'];
+var x = document.getElementById ("lettersTried");
+//===> HOW DO I ENTER A RULE THAT DOESN'T ALLOW A KEY THAT ISN'T A LETTER; OR REPEATED GUESSES? CURRENTLY COUNTING ALL ONKEY EVENTS...
+// "if eventkey === integer or non-character key, FALSE; alert: "That's not a letter. Please pick a letter."; do not display in lettersTried or subtract from guessesRemaining.
+
+
 
 // if the game is opened, the computer picks a letter and does not display it to the player. 
 // the player chooses a letter (it is automatically converted to lower case to match the array) and the counters change.
@@ -19,7 +25,6 @@ document.onkeydown = function (event) {
   if (computerLetter === letterClick){
     wins++
     document.querySelector("#wins").innerHTML = wins
-    
     restart()
   }
   
@@ -28,13 +33,12 @@ document.onkeydown = function (event) {
     lettersTried = lettersTried + letterClick  
       document.querySelector("#lettersTried").innerHTML = lettersTried
       document.querySelector("#remainingGuesses").innerHTML = remainingGuesses 
-    
-    if (remainingGuesses === 0) {
-      losses++
-        document.querySelector("#losses").innerHTML = losses
-    
-        restart()
-    }
+  } 
+
+  if (remainingGuesses === 0) {
+    losses++
+    document.querySelector("#losses").innerHTML = losses
+    restart()
   }
 }
 
