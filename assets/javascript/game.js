@@ -21,10 +21,11 @@ document.onkeydown = function (event) {
   console.log("myletter:", event.key)
  var keypressed= event.key.toLowerCase();
   console.log("lettersTried" +  lettersTried.indexOf(keypressed) );
-  //if keyCode is outside of 65-90, ignore (compare "player letter" with the computerletter; if guess does not match index, then ALERT and do not update "# of remaining guesses --")
+  //(Dave explained key numeric values so this line would work to exclude non letter keys)if keyCode is outside of 65-90, ignore (compare "player letter" with the computerletter; if guess does not match index, then ALERT and do not update "# of remaining guesses" or "letters tried")
   if (event.keyCode > 90 || event.keyCode < 65) {
     alert("That's not a letter. Please pick a letter.")
   }
+  //(Phil grappled with this statement; their was confusing syntax elsewhere; we discussed making a for loop or using a WHILE condition, but ultimately this was the easiest function to run.)
   else if (lettersTried.indexOf(keypressed) > -1) {
     alert("You've tried this letter. Please pick a different letter.");
   }
@@ -50,7 +51,7 @@ document.onkeydown = function (event) {
         lettersTried = " " + lettersTried + letterClick;
       }
 
-
+      // after above conditions, where to populate information and caluclation in HTML
       document.querySelector("#lettersTried").innerHTML = lettersTried
       document.querySelector("#remainingGuesses").innerHTML = " " + remainingGuesses
     }
